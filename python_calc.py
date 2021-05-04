@@ -36,3 +36,4 @@ def main():
             print("Invalid Input, please choose + - / or *")
             n = 5
 main()
+input("Press enter to close")
