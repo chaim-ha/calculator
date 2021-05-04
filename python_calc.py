@@ -10,19 +10,30 @@ by chaim hayes
 def main():
 
     b = int(input("Enter number: "))
-    a = int(input("Enter number: "))
+ 
+    n = 5
+    while n > 3:
+        
+        userInput = input("+ - / *\nChoice: ")
 
-    userInput = input("1 for Addition\n2 for Subtraction\n3 for Division\n4 for Multiplication\nChoice: ")
-    
-    if userInput == "1":
-        print(a+b)
-    elif userInput == "2":
-        print(a-b)
-    elif userInput == "3":
-        print(a/b)
-    elif userInput == "4":
-        print(a*b)
-    else:
-        print("Invalid Input, please choose 1 2 3 or 4")
-
+        if userInput == "+":
+            a = int(input("Enter number: "))
+            print(a+b)
+            n = 1
+        elif userInput == "-":
+            a = int(input("Enter number: "))
+            print(a-b)
+            n = 1
+        elif userInput == "/":
+            a = int(input("Enter number: "))
+            print(a/b)
+            n = 1
+        elif userInput == "*":
+            a = int(input("Enter number: "))
+            print(a*b)
+            n = 1
+        else:
+            print("Invalid Input, please choose + - / or *")
+            n = 5
 main()
+input("Press enter to close")
