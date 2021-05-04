@@ -10,8 +10,7 @@ by chaim hayes
 def main():
 
     b = int(input("Enter number: "))
-    #a = int(input("Enter number: "))
-
+ 
     n = 5
     while n > 3:
         
